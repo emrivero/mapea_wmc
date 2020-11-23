@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+
+<ViewContext version="1.1.0" id="Idea"
+	xmlns="http://www.opengis.net/context"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.opengis.net/context 
+	http://schemas.opengis.net/context/1.1.0/context.xsd">
+	<General>
+		<Window width="1000" height="1000" />
+		<BoundingBox minx="272535.248767" miny="4165247.449079" maxx="414642.822353" maxy="4228243.589947" SRS="EPSG:23030"/>
+
+			
+		<Title>CONTEXT BASE</Title>
+		<Extension>
+					<ol:maxExtent minx="96500.00000" miny="3960000.000" maxx="1222000.000" maxy="4300000.000" xmlns:ol="http://openlayers.org/context"/>
+		</Extension>
+		
+	</General>
+	<LayerList>
+
+
+
+		
+		
+
+<!-- Capa base 2: MTN -->	
+	<!-- Capa base 2: MTA  -->	
+			<Layer queryable="0" hidden="0">
+					<Server service="OGC:WMS" version="1.1.1" title="raster">
+						<OnlineResource xlink:type="simple"
+							xlink:href="http://ideandalucia.es/services/andalucia/wms?" />
+					</Server>
+					<Name>00_Mapa_Andalucia</Name>
+					<Title>Mapa Andalucia </Title>
+					<SRS>EPSG:23030</SRS>
+					<FormatList>
+						<Format current="1">image/png</Format>
+					</FormatList>		 
+					<Extension>
+						<ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+						<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">true</ol:isBaseLayer>
+						<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+					</Extension>		
+						
+	</Layer> 
+	
+	<Layer queryable="0" hidden="1">
+			<Server service="OGC:WMS" version="1.1.1" title="raster">
+				<OnlineResource xlink:type="simple"
+					xlink:href=" http://www.ign.es/wms-inspire/mapa-raster?" />
+			</Server>
+			<Name>mtn_rasterizado</Name>
+			<Title>Mapa topogr�fico</Title>
+			<SRS>EPSG:23030</SRS>
+			<FormatList>
+				<Format current="1">image/png</Format>
+			</FormatList>		 
+			<Extension>
+				<ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+				<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">true</ol:isBaseLayer>
+				<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+			</Extension>		
+				
+	</Layer> 
+	
+	<!-- Capa base 1: Mapa Base -->	
+	<Layer queryable="0" hidden="1">
+			<Server service="OGC:WMS" version="1.1.1" title="raster">
+				<OnlineResource xlink:type="simple"
+					xlink:href="http://www.ign.es/wms-inspire/ign-base?" />
+			</Server>
+			<Name>IGNBaseTodo</Name>
+			<Title>Mapa Base IGN</Title>
+			<SRS>EPSG:23030</SRS>
+			<FormatList>
+				<Format current="1">image/png</Format>
+			</FormatList>		 
+			<Extension>
+				<ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+				<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">true</ol:isBaseLayer>
+				<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+			</Extension>
+		</Layer>	
+<!-- Capa base 3: PNOA -->	
+	<Layer queryable="0" hidden="1">
+			<Server service="OGC:WMS" version="1.1.1" title="raster">
+				<OnlineResource xlink:type="simple"
+					xlink:href="http://www.ign.es/wms-inspire/pnoa-ma?" />
+			</Server>
+			<Name>OI.OrthoimageCoverage</Name>
+			<Title>Ortofoto reciente</Title>
+			<SRS>EPSG:23030</SRS>
+			<FormatList>
+				<Format current="1">image/png</Format>
+			</FormatList>		 
+			<Extension>
+				<ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+				<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">true</ol:isBaseLayer>
+				<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+			</Extension>		
+				
+	</Layer> 
+	<!-- Capa base 3: ortofoto andalucia -->
+			<Layer queryable="0" hidden="1">
+			<Server service="OGC:WMS" version="1.1.1" title="raster">
+				<OnlineResource xlink:type="simple"
+					xlink:href="http://www.ideandalucia.es/wms/ortofoto2010?" />
+			</Server>
+			<Name>orto_2010-11</Name>
+			<Title>Ortofoto 2011</Title>
+			<SRS>EPSG:23030</SRS>
+			<FormatList>
+				<Format current="1">image/png</Format>
+			</FormatList>		 
+			<Extension>
+				<ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+				<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+				<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+			</Extension>		
+				
+	</Layer> 				
+	 
+<!-- Capa base 4: Orto 1956 -->	
+	<Layer queryable="0" hidden="1">
+			<Server service="OGC:WMS" version="1.1.1" title="raster">
+				<OnlineResource xlink:type="simple"
+					xlink:href="http://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Ortofoto_Andalucia_1956?" />
+			</Server>
+			<Name>REDIAM</Name>
+			<Title>Vuelo 1956</Title>
+			<SRS>EPSG:23030</SRS>
+			<FormatList>
+				<Format current="1">image/png; mode=24bit</Format>
+			</FormatList>		 
+			<Extension>
+				<ol:transparent xmlns:ol="http://openlayers.org/context">false</ol:transparent>
+				<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">true</ol:isBaseLayer>
+				<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+			</Extension>		
+					
+	</Layer> 
+	
+	<!-- Capa base 5: Orto 1978 -->	
+		<Layer queryable="0" hidden="1">
+				<Server service="OGC:WMS" version="1.1.1" title="raster">
+					<OnlineResource xlink:type="simple"
+						xlink:href=" http://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Ortofoto_BN_1977_83?" />
+				</Server>
+				<Name>REDIAM</Name>
+				<Title>Ortofoto 1978</Title>
+				<SRS>EPSG:23030</SRS>
+				<FormatList>
+					<Format current="1">image/jpeg</Format>
+				</FormatList>		 
+				<Extension>
+					<ol:transparent xmlns:ol="http://openlayers.org/context">false</ol:transparent>
+					<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">true</ol:isBaseLayer>
+					<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+				</Extension>		
+						
+	</Layer> 
+	 <!-- Capa base 6: 1� edicion MTN-->	
+		 			<Layer queryable="0" hidden="1">
+		 					<Server service="OGC:WMS" version="1.1.1" title="raster">
+		 						<OnlineResource xlink:type="simple"
+		 							xlink:href="http://www.ign.es/wms/primera-edicion-mtn?" />
+		 					</Server>
+		 					<Name>MTN50</Name>
+		 					<Title>Primera edici�n MTN50</Title>
+		 					<SRS>EPSG:23030</SRS>
+		 					<FormatList>
+		 						<Format current="1">image/jpeg</Format>
+		 					</FormatList>		 
+		 					<Extension>
+		 						<ol:transparent xmlns:ol="http://openlayers.org/context">false</ol:transparent>
+		 						<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">true</ol:isBaseLayer>
+		 						<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+		 					</Extension>		
+		 							
+	</Layer> 
+	
+	 
+			 			
+	 <!-- Capa base 7: Minutas MTN-->	
+			 			<Layer queryable="0" hidden="1">
+			 					<Server service="OGC:WMS" version="1.1.1" title="raster">
+			 						<OnlineResource xlink:type="simple"
+			 							xlink:href="http://www.ign.es/wms/primera-edicion-mtn?" />
+			 					</Server>
+			 					<Name>catastrones</Name>
+			 					<Title>Minutas MTN50 (1915-1960)</Title>
+			 					<SRS>EPSG:23030</SRS>
+			 					<FormatList>
+			 						<Format current="1">image/jpeg</Format>
+			 					</FormatList>		 
+			 					<Extension>
+			 						<ol:transparent xmlns:ol="http://openlayers.org/context">false</ol:transparent>
+			 						<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">true</ol:isBaseLayer>
+			 						<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+			 					</Extension>		
+			 							
+		</Layer> 
+		<!-- Capa base 8: 1� edicion MTN-->	
+	<Layer queryable="0" hidden="1">
+				 					<Server service="OGC:WMS" version="1.1.1" title="raster">
+				 						<OnlineResource xlink:type="simple"
+				 							xlink:href="http://www.ign.es/wms/minutas-cartograficas?" />
+				 					</Server>
+				 					<Name>Minutas</Name>
+				 					<Title>Planimetr�as antiguas</Title>
+				 					<SRS>EPSG:23030</SRS>
+				 					<FormatList>
+				 						<Format current="1">image/jpeg</Format>
+				 					</FormatList>		 
+				 					<Extension>
+				 						<ol:transparent xmlns:ol="http://openlayers.org/context">false</ol:transparent>
+				 						<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">true</ol:isBaseLayer>
+				 						<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+				 					</Extension>		
+				 							
+		</Layer> 
+			<!-- Capa base 9: Mapa alem�s 1944-->	
+				<Layer queryable="0" hidden="1">
+						<Server service="OGC:WMS" version="1.1.1" title="raster">
+							<OnlineResource xlink:type="simple"
+								xlink:href="http://www.ideandalucia.es/wms/mta50r_aleman_1944?" />
+						</Server>
+						<Name>maa50_1940</Name>
+						<Title>Mapa 1944</Title>
+						<SRS>EPSG:23030</SRS>
+						<FormatList>
+							<Format current="1">image/jpeg</Format>
+						</FormatList>		 
+						<Extension>
+							<ol:transparent xmlns:ol="http://openlayers.org/context">false</ol:transparent>
+							<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">true</ol:isBaseLayer>
+							<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+						</Extension>		
+								
+	</Layer> 
+	
+		<!-- Capa base 10: Mapas Espacios Naturales-->	
+			<Layer queryable="0" hidden="1">
+					<Server service="OGC:WMS" version="1.1.1" title="raster">
+						<OnlineResource xlink:type="simple"
+							xlink:href=" http://www.ideandalucia.es/wms/espacios_naturales?" />
+					</Server>
+					<Name>eenn</Name>
+					<Title>Mapas EENN</Title>
+					<SRS>EPSG:23030</SRS>
+					<FormatList>
+						<Format current="1">image/jpeg</Format>
+					</FormatList>		 
+					<Extension>
+						<ol:transparent xmlns:ol="http://openlayers.org/context">false</ol:transparent>
+						<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">true</ol:isBaseLayer>
+						<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+					</Extension>		
+							
+	</Layer> 
+	
+	
+	<!-- Layer catastro -->
+		<Layer queryable="1" hidden="1">
+				<Server service="OGC:WMS" version="1.1.1" title="raster">
+					<OnlineResource xlink:type="simple"
+						xlink:href="http://ovc.catastro.meh.es/Cartografia/WMS/ServidorWMS.aspx?" />
+				</Server>
+				<Name>Catastro</Name>
+				<Title>Catastro</Title>
+				<SRS>EPSG:23030</SRS>
+				<FormatList>
+					<Format current="1">image/png</Format>
+				</FormatList>	<StyleList>
+										<Style current="1">
+											<Name/>
+											<Title>Default</Title>
+										</Style>
+									</StyleList>	 
+				<Extension>
+					<ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+					<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+					<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+				</Extension>
+						
+				
+	</Layer>
+	<!-- Layer cotos -->
+									<Layer queryable="1" hidden="1">
+											<Server service="OGC:WMS" version="1.1.1" title="raster">
+												<OnlineResource xlink:type="simple"
+													xlink:href="http://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_terrenos_cinegeticos_andalucia?" />
+											</Server>
+											<Name>Terrenos_cinegeticos_2016-17</Name>
+											<Title>Terrenos_cinegeticos</Title>
+											<SRS>EPSG:23030</SRS>
+											<FormatList>
+												<Format current="1">image/png</Format>
+											</FormatList><StyleList>
+										<Style current="1">
+											<Name/>
+											<Title>Default</Title>
+										</Style>
+									</StyleList>		 
+											<Extension>
+												<ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+												<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+												<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+											</Extension>
+														
+											
+				</Layer>
+
+<!-- Layer arboleda 1 -->
+	<Layer queryable="1" hidden="1">
+			<Server service="OGC:WMS" version="1.1.1" title="raster">
+				<OnlineResource xlink:type="simple"
+					xlink:href="http://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_arb_abda_singulares?" />
+			</Server>
+			<Name>arboledas_singulares</Name>
+			<Title>Arboledas</Title>
+			<SRS>EPSG:23030</SRS>
+			<FormatList>
+				<Format current="1">image/png</Format>
+			</FormatList><StyleList>
+										<Style current="1">
+											<Name/>
+											<Title>Default</Title>
+										</Style>
+									</StyleList>		 
+			<Extension>
+				<ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+				<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+				<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+			</Extension>
+							
+			
+	</Layer> 
+
+<!-- Layer arboleda 2 -->
+	<Layer queryable="1" hidden="1">
+			<Server service="OGC:WMS" version="1.1.1" title="raster">
+				<OnlineResource xlink:type="simple"
+					xlink:href="http://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_arb_abda_singulares?" />
+			</Server>
+			<Name>arboles_singulares</Name>
+			<Title>Arboles singulares</Title>
+			<SRS>EPSG:23030</SRS>
+			<FormatList>
+				<Format current="1">image/png</Format>
+			</FormatList>	<StyleList>
+										<Style current="1">
+											<Name/>
+											<Title>Default</Title>
+										</Style>
+									</StyleList>	 
+			<Extension>
+				<ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+				<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+				<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+			</Extension>
+									
+			
+	</Layer> 
+
+<!-- Layer manantiales -->
+	<Layer queryable="1" hidden="1">
+			<Server service="OGC:WMS" version="1.1.1" title="raster">
+				<OnlineResource xlink:type="simple"
+					xlink:href="http://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Manantiales_y_Fuentes?" />
+			</Server>
+			<Name>manantiales</Name>
+			<Title>Fuentes</Title>
+			<SRS>EPSG:23030</SRS>
+			<FormatList>
+				<Format current="1">image/png</Format>
+			</FormatList><StyleList>
+										<Style current="1">
+											<Name/>
+											<Title>Default</Title>
+										</Style>
+									</StyleList>		 
+			<Extension>
+				<ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+				<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+				<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+			</Extension>
+								
+			
+	</Layer> 
+
+<!-- Layer inventario VVPP 1 -->
+	<Layer queryable="1" hidden="1">
+			<Server service="OGC:WMS" version="1.1.1" title="raster">
+				<OnlineResource xlink:type="simple"
+					xlink:href="http://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Inventario_VVPP?" />
+			</Server>
+			<Name>Lugares_VVPP</Name>
+			<Title>Descansaderos</Title>
+			<SRS>EPSG:23030</SRS>
+			<FormatList>
+				<Format current="1">image/png</Format>
+			</FormatList><StyleList>
+										<Style current="1">
+											<Name/>
+											<Title>Default</Title>
+										</Style>
+									</StyleList>		 
+			<Extension>
+				<ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+				<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+				<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+			</Extension>
+									
+			
+	</Layer> 
+
+<!-- Layer inventario VVPP 2 -->
+	<Layer queryable="1" hidden="1">
+			<Server service="OGC:WMS" version="1.1.1" title="raster">
+				<OnlineResource xlink:type="simple"
+					xlink:href="http://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Inventario_VVPP?" />
+			</Server>
+			<Name>linea_base_deslindada</Name>
+			<Title>VP deslindadas</Title>
+			<SRS>EPSG:23030</SRS>
+			<FormatList>
+				<Format current="1">image/png</Format>
+			</FormatList>		 
+			<StyleList>
+										<Style current="1">
+											<Name/>
+											<Title>Default</Title>
+										</Style>
+									</StyleList><Extension>
+				<ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+				<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+				<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+			</Extension>
+							
+			
+	</Layer> 
+
+<!-- Layer inventario VVPP 3 -->
+	<Layer queryable="1" hidden="1">
+			<Server service="OGC:WMS" version="1.1.1" title="raster">
+				<OnlineResource xlink:type="simple"
+					xlink:href="http://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Inventario_VVPP?" />
+			</Server>
+			<Name>Inventario_VVPP</Name>
+			<Title>VP clasificadas</Title>
+			<SRS>EPSG:23030</SRS>
+			<FormatList>
+				<Format current="1">image/png</Format>
+			</FormatList>		 
+				<StyleList>
+														<Style current="1">
+															<Name/>
+															<Title>Default</Title>
+														</Style>
+									</StyleList>
+			<Extension>
+				<ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+				<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+				<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+			</Extension>
+								
+			
+	</Layer> 
+	
+	<!-- Layer inventario VVPP 3 -->
+		<Layer queryable="1" hidden="1">
+				<Server service="OGC:WMS" version="1.1.1" title="raster">
+					<OnlineResource xlink:type="simple"
+						xlink:href="http://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Montes_Publicos_Andalucia?" />
+				</Server>
+				<Name>montes</Name>
+				<Title>Montes publicos</Title>
+				<SRS>EPSG:23030</SRS>
+				<FormatList>
+					<Format current="1">image/png</Format>
+				</FormatList>
+				<StyleList>
+														<Style current="1">
+															<Name/>
+															<Title>Default</Title>
+														</Style>
+									</StyleList>
+				<Extension>
+					<ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+					<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+					<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+				</Extension>
+										
+				
+	</Layer> 
+	<Layer queryable="1" hidden="1">
+										<Server service="OGC:WMS" version="1.1.1">
+											<OnlineResource xlink:type="simple" xlink:href="http://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Equipamientos_Uso_Publico_Andalucia?" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+										</Server>
+										<Name>senderos</Name>
+										<Title>Senderos RENPA</Title>
+										<FormatList>
+											<Format current="1">image/png; mode=24bit</Format>
+										</FormatList>
+									<StyleList>
+																			<Style current="1">
+																				<Name/>
+																				<Title>Default</Title>
+																			</Style>
+									</StyleList>
+										<Extension>
+											
+											<ol:transparent xmlns:ol="http://openlayers.org/context">TRUE</ol:transparent>
+											
+											<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+											<ol:opacity xmlns:ol="http://openlayers.org/context">1</ol:opacity>
+											<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+											<ol:groupDisplayLayerSwitcher xmlns:ol="http://openlayers.org/context">none</ol:groupDisplayLayerSwitcher>
+											<ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+										</Extension>
+				</Layer>
+				<Layer queryable="1" hidden="1">
+														<Server service="OGC:WMS" version="1.1.1">
+															<OnlineResource xlink:type="simple" xlink:href="http://mapserver.eprinsa.es/cgi-bin/territorial_capas?" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+														</Server>
+														<Name>PH_Rutas</Name>
+														<Title>Paisajes con Historia</Title>
+														<FormatList>
+															<Format current="1">image/png; mode=24bit</Format>
+														</FormatList>
+														<StyleList>
+																								<Style current="1">
+																									<Name/>
+																									<Title>Default</Title>
+																								</Style>
+									</StyleList>
+														<Extension>
+															
+															<ol:transparent xmlns:ol="http://openlayers.org/context">TRUE</ol:transparent>
+															
+															<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+															<ol:opacity xmlns:ol="http://openlayers.org/context">1</ol:opacity>
+															<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+															<ol:groupDisplayLayerSwitcher xmlns:ol="http://openlayers.org/context">none</ol:groupDisplayLayerSwitcher>
+															<ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+														</Extension>
+				</Layer>
+				<Layer queryable="1" hidden="1">
+				<Server service="OGC:WMS" version="1.1.1">
+																							<OnlineResource xlink:type="simple" xlink:href="http://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_zonificacion_PORN_vigentes?" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+																						</Server>
+																						<Name>porn_vigentes</Name>
+																						<Title>PORN vigentes</Title>
+																						<FormatList>
+																							<Format current="1">image/png; mode=24bit</Format>
+																						</FormatList>
+																						<StyleList>
+																																<Style current="1">
+																																	<Name/>
+																																	<Title>Default</Title>
+																																</Style>
+									</StyleList>
+																						<Extension>
+																							
+																							<ol:transparent xmlns:ol="http://openlayers.org/context">TRUE</ol:transparent>
+																							
+																							<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+																							<ol:opacity xmlns:ol="http://openlayers.org/context">1</ol:opacity>
+																							<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+																							<ol:groupDisplayLayerSwitcher xmlns:ol="http://openlayers.org/context">none</ol:groupDisplayLayerSwitcher>
+																							<ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+																		</Extension>
+				</Layer>
+				<Layer queryable="1" hidden="1">
+										<Server service="OGC:WMS" version="1.1.1">
+											<OnlineResource xlink:type="simple" xlink:href="http://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Red_Natura_2000?" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+										</Server>
+										<Name>red_natura_2000</Name>
+										<Title>Red Natura2000</Title>
+										<FormatList>
+											<Format current="1">image/png; mode=24bit</Format>
+										</FormatList>
+										<StyleList>
+																				<Style current="1">
+																					<Name/>
+																					<Title>Default</Title>
+																				</Style>
+									</StyleList>
+															<Extension>
+											
+											<ol:transparent xmlns:ol="http://openlayers.org/context">TRUE</ol:transparent>
+											
+											<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+											<ol:opacity xmlns:ol="http://openlayers.org/context">1</ol:opacity>
+											<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+											<ol:groupDisplayLayerSwitcher xmlns:ol="http://openlayers.org/context">none</ol:groupDisplayLayerSwitcher>
+											<ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+										</Extension>
+				</Layer>
+				<Layer queryable="1" hidden="1">
+														<Server service="OGC:WMS" version="1.1.1">
+															<OnlineResource xlink:type="simple" xlink:href="http://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Georrecursos_Andalucia_2011?" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+														</Server>
+														<Name>inventario_georrecursos</Name>
+														<Title>Georrecursos</Title>
+														<FormatList>
+															<Format current="1">image/png; mode=24bit</Format>
+														</FormatList>
+														<StyleList>
+																								<Style current="1">
+																									<Name/>
+																									<Title>Default</Title>
+																								</Style>
+									</StyleList>
+														<Extension>
+															
+															<ol:transparent xmlns:ol="http://openlayers.org/context">TRUE</ol:transparent>
+															
+															<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+															<ol:opacity xmlns:ol="http://openlayers.org/context">1</ol:opacity>
+															<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+															<ol:groupDisplayLayerSwitcher xmlns:ol="http://openlayers.org/context">none</ol:groupDisplayLayerSwitcher>
+															<ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+														</Extension>
+				</Layer>
+		
+							<Layer queryable="1" hidden="1">
+							    <Server service="OGC:WMS" version="1.1.1">
+							           <OnlineResource xlink:type="simple" xlink:href="http://www.ideandalucia.es/wms/mta100v_2005?service=wms&amp;" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+							                 </Server>
+							                 <Name>Vertices_Geodesicos</Name>
+							                 <Title>Vertices</Title>
+							                 <sld:MinScaleDenominator xmlns:sld="http://www.opengis.net/sld">15001.000000</sld:MinScaleDenominator>
+							                 <sld:MaxScaleDenominator xmlns:sld="http://www.opengis.net/sld">2350000.000</sld:MaxScaleDenominator>
+							                 <FormatList>
+							                       <Format current="1">image/png; mode=24bit</Format>
+							                  </FormatList>
+							                  <StyleList>
+							                  <Style current="1">
+							                  <Name/>
+							                       <Title>Default</Title>
+							<SLD><Title>Default</Title>
+							                    <StyledLayerDescriptor version="1.0.0" xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc"
+							                      xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+							                      xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
+							                       <NamedLayer>
+							                        <Name>Vertices_Geodesicos</Name>
+							                          <UserStyle>
+							                          <Title>xxx</Title>
+							                          <FeatureTypeStyle>
+							                        <Rule>
+							                                                    <PointSymbolizer>
+							                           <Graphic>
+							                             <Mark>
+							                            <WellKnownName>triangle</WellKnownName>
+							                               <Fill>
+							                               
+							                               <CssParameter name="fill">#FF0000</CssParameter>
+							                               </Fill>
+							                             </Mark>
+							                             <Size>10</Size>
+							                          </Graphic>
+							                          </PointSymbolizer>
+							                         <TextSymbolizer>
+							                             <Label>
+							                               <ogc:PropertyName>nombre</ogc:PropertyName>
+							                             </Label>
+							                             <Font>
+							                               <CssParameter name="font-family">Arial</CssParameter>
+							                               <CssParameter name="font-size">10</CssParameter>
+							                               <CssParameter name="font-style">normal</CssParameter>
+							                               <CssParameter name="font-weight">bold</CssParameter>
+							                             </Font>
+							                         
+							                             <Fill>
+							                               <CssParameter name="fill">#000000</CssParameter>
+							                             </Fill>
+							                          </TextSymbolizer>
+							                        </Rule>
+							                          </FeatureTypeStyle>
+							                        </UserStyle>
+							                      </NamedLayer>
+							                    </StyledLayerDescriptor>
+							                    </SLD>
+							                                                                    </Style>
+							                                                                </StyleList>
+							                                                                <Extension>
+							                                                                   
+							                                                                    <ol:transparent xmlns:ol="http://openlayers.org/context">TRUE</ol:transparent>
+							                                                                   
+							                                                                    <ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+							                                                                    <ol:opacity xmlns:ol="http://openlayers.org/context">1</ol:opacity>
+							                                                                    <ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+							                                                                    <ol:groupDisplayLayerSwitcher xmlns:ol="http://openlayers.org/context">none</ol:groupDisplayLayerSwitcher>
+							                                                                    <ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+							                                                                </Extension>
+                    </Layer>
+						
+</LayerList>
+</ViewContext>
