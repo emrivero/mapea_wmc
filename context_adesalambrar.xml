@@ -9,9 +9,9 @@
 	http://schemas.opengis.net/context/1.1.0/context.xsd">
 	<General>
 		<Window width="1000" height="1000" />
-		<BoundingBox minx="272535.248767" miny="4165247.449079" maxx="414642.822353" maxy="4228243.589947" SRS="EPSG:23030"/>
+		<BoundingBox minx="-1753739.3470632215" miny="4215938.007373588" maxx="851918.4348339494" maxy="5468282.278797915" SRS="EPSG:23030"/>
 		<Extension>	
-					<ol:maxExtent minx="96500.00000" miny="3960000.000" maxx="1222000.000" maxy="4300000.000" xmlns:ol="http://openlayers.org/context"/>	
+					<ol:maxExtent minx="-1753739.3470632215" miny="4215938.007373588" maxx="851918.4348339494" maxy="5468282.278797915" xmlns:ol="http://openlayers.org/context"/>	
 		</Extension>
 			
 		<Title>CONTEXT BASE</Title>
