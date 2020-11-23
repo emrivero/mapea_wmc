@@ -13,9 +13,6 @@
 
 			
 		<Title>CONTEXT BASE</Title>
-		<Extension>
-					<ol:maxExtent minx="96500.00000" miny="3960000.000" maxx="1222000.000" maxy="4300000.000" xmlns:ol="http://openlayers.org/context"/>
-		</Extension>
 		
 	</General>
 	<LayerList>
