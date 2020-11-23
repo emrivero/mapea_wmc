@@ -40,7 +40,7 @@
 					</FormatList>		 
 					<Extension>
 						<ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
-						<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">true</ol:isBaseLayer>
+						<ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
 						<ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
 					</Extension>		
 						
